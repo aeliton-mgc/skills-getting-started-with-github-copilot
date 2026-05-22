@@ -81,13 +81,21 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 8px 0 0 20px;
+  list-style: none;
+  margin: 8px 0 0 0;
   padding: 0;
 }
 
 .participant-item {
-  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
   font-size: 14px;
   color: #444;
 }
@@ -95,6 +103,23 @@ section h3 {
 .participant-item.empty {
   font-style: italic;
   color: #888;
+  border: none;
+  background-color: transparent;
+}
+
+.participant-remove {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.participant-remove:hover {
+  color: #8e0000;
 }
 
 .form-group {
